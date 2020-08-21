@@ -9,7 +9,7 @@ pipeline {
 			}
 		}
 		stage('Test'){
-			userInput['smartcr'] 
+			env.smartCR = userInput['smartcr'] 
 		}
     }
 }
