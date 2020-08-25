@@ -8,12 +8,6 @@ pipeline {
 				git changelog: false, credentialsId: 'Jenkins_GitHub', url: 'https://github.com/dechaA/CompareFiles'
 			}
 		}
-		stage('Test') {
-			steps {
-				script{
-					env.smartCR = userInput['smartcr'] 
-				}
-			}
-		}
     }
 }
+ 
