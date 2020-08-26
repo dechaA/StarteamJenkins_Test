@@ -4,11 +4,15 @@ pipeline {
     stages {
 		stage('Check Out Source') {
 			steps {
-				//git 'https://github.com/dechaA/StarteamJenkins_Test.git'
+				echo 'Start Checkout'
 				git  'https://github.com/dechaA/CompareFiles'
+			}
+		}
+		stage('Build') {
+			steps {
+				echa 'Start Build'
 				//sh "dotnet build CompareFiles.vbproj --configuration Release"
 				 sh "xbuild CompareFiles.sln" 
-				echo 'ChekcOut Completed'
 			}
 		}
     }
