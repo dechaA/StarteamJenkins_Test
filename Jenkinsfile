@@ -6,7 +6,8 @@ pipeline {
 			steps {
 				//git 'https://github.com/dechaA/StarteamJenkins_Test.git'
 				git  'https://github.com/dechaA/CompareFiles'
-				sh "dotnet build CompareFiles.vbproj --configuration Release"
+				//sh "dotnet build CompareFiles.vbproj --configuration Release"
+				 sh "xbuild CompareFiles.sln" 
 				echo 'ChekcOut Completed'
 			}
 		}
