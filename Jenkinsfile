@@ -12,7 +12,7 @@ pipeline {
 			steps {
 				echo 'Start Build'
 				//sh "dotnet build CompareFiles.vbproj --configuration Release"
-				 sh "xbuild CompareFIlesConsole.vbproj" 
+				 sh "xbuild CompareFilesConsole.vbproj" 
 			}
 		}
     }
