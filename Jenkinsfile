@@ -5,7 +5,7 @@ pipeline {
 		stage('Check Out SourceCode') {
 			steps {
 				echo 'Start Checkout'
-				git  'https://github.com/dechaA/CompareFiles'
+				git  'https://github.com/dechaA/CompareConsole.git'
 			}
 		}
 		stage('Build') {
