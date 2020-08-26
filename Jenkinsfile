@@ -6,7 +6,7 @@ pipeline {
 			steps {
 				//git 'https://github.com/dechaA/StarteamJenkins_Test.git'
 				git  'https://github.com/dechaA/CompareFiles'
-				powershell 'dotnet build'
+				bat "dotnet build CompareFiles.vbproj --configuration Release"
 				echo 'ChekcOut Completed'
 			}
 		}
